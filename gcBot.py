@@ -56,7 +56,7 @@ def jsonParse(reponseInfo):
     cardBalance = readData["cardBalance"]
     cardNumber = readData["cardNumber"]
     if cardBalance > 0:
-        info = "cardNumber = " + cardNumber + " cardBalance = $" + str(cardBalance) 
+        info = "cardNumber '" + cardNumber + "' has a balance of $" + str(cardBalance) 
     return info 
     
 
