@@ -42,7 +42,7 @@ def getResponse(currentCardNum):
     params = (
             
             ('test', 'test'), #insert params e.g. companyID?=cla201 then it would be ('companyID','cla201')
-            ('test', 'test'),
+            ('test', 'test'),   #works in key/value pairs, where the params usually come after the question mark
             ('cardNumber', cardToInt),
             )
 
@@ -61,7 +61,7 @@ def jsonParse(reponseInfo):
     
 
 def getNums():
-    file = open("giftcards.txt","r") #must have a file named giftcards w/ valid numbers!
+    file = open("giftcards.txt","r") #must have a textfile named "giftcards" w/ valid numbers!
     giftCardArray = []
     for line in file:
         giftCardArray.append(line.strip('\n'))
